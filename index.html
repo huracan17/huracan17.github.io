@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Acceso privado</title>
+<style>
+:root{--bg:#111111;--fg:#f5f5f5;--acc:#F5C800;--muted:#9a9a9a}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,sans-serif;padding:16px}
+.box{width:100%;max-width:360px;text-align:center}h1{font-size:1.3rem;margin:0 0 6px}p{color:var(--muted);margin:0 0 20px;font-size:.9rem}
+input[type=password]{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #444;background:#1c1c1c;color:var(--fg);font-size:1rem}
+button{width:100%;margin-top:12px;padding:12px;border:0;border-radius:10px;background:var(--acc);color:#111;font-weight:700;font-size:1rem;cursor:pointer}
+label{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:12px;color:var(--muted);font-size:.85rem}
+#err{color:#ff7b7b;min-height:1.2em;margin-top:10px;font-size:.9rem}
+</style></head><body>
+<form class="box" id="f">
+<h1>Acceso privado</h1><p>Página privada. Ingresá la contraseña.</p>
+<input type="password" id="pw" placeholder="Contraseña" autocomplete="current-password" autofocus required>
+<label><input type="checkbox" id="rem" checked> Recordar en este dispositivo (30 días)</label>
+<button type="submit" id="b">Entrar</button><div id="err"></div>
+</form>
+<script>
+const D={s:"uCCkN73A+Y9M+ThjXy5Www==",i:"200HOxMmuHoJ9/J1",c:"le1GZX/k+2MP2SOUaelI59rAOCZ8jfaBVRc2EB3tKDYsBMvwlWSZHfdWbRW0a44bNxXBTcmq15nopWvwDgM/fZXjLBRbetQZ11+Vwurq0Ir1kOM9OiVRbCU0+S9yVLpzW/BeWi8Jjwn4ntMf5Yh8N+gCXuTwRE5ZCu1pE8GqGbvjAYJ3JTuHYLeaquMjJ3lOgtdy8WxF3uiyOG0SSubua7mIB3TNDVrKZvHw7DqnMRqjYnVSRfiPJkNTWJ/qh952IGDsrEJY6Yt6WSFXvHw9bKOxtwxQk5SHkNB6s98Lr0r4EqMGjllSEdwTm38fSO2jBbVeGyZ5YOwC9+A/GaNdlv2dXs000eURaooPjs3YM3atg1VYiPKUnmEX1YeKVR3RUw+AKIyyMXG2n/9Pbffwih0eAhU8Y3reqz/ae1dGE0BZqI8+Kvysu32w0V0dlLcdlkZ5MdlXKa93z/GNJ7EfBukxBXr+uwtPPsEP45/qRPKWVnCqzlgRP4LZqQUmNWl4el2HQtls9rNcuAQorMqmhfTk/a+ShV7mLYnGYKHYtqCQQnjEG3XoYGEyDs2MxmIrFong5DXuqC/l/AavXz1Iz3WG2VhnLtQcVs8eXBhyhzyH/5IyB7Jpt/Ansy3cW6axJH8Cggj2cMufP8gAoy0PiVULsUzRvJ0wriHXzMQDUIev6xzkFjSQFIghsjSezr1MtrSjL3jWun/4ky8Nr51MYw952qhYCHD5lUPxOE0KtC1fquKeahU7tOAYUljtcvVqhdWGZbVKoiZoQuX15w1f6YnzXY6RNIoa0o5OC08bluGQ4ImyT19IBZtn3P+U0M+UFEYQMzvFSVGefvm2D4IxU6dtJg+q/IlJ54yeiomQ72/DWxgLuqmrlj7HtKJNKemK1+CGMIyO3a7PCEUKff0yowa1EJXDkukfSpB/WZu/cxhgbLh+1ETHsgqB2zW5FnP1L4R3XOxm/vkJSlYC2RSoHBSoS9uuqSbNQ3lFCeOK8CzpgjK9VeE4EV/3DHOP9rM8vDPXwpRMvrxjyLxh/kDEmE9Qv1sNQECVZSM10WaZfxhpm/X0Rte+Hp5wu8qlZ8mqYO6rL7I85o63fNAXbjAKjeKIvpVfBB2jC8Srkke846bXEG1xD9Vjqv3mP8szew1+6vljjLW2474NCjCqQMg1UGUO/kNu1YkndK4SHzwagnuPF9KQgRUv1nFwo0nO8sRHpsFEDEf9rDoSospw4hL1/jPa3fvcX7NQGG6SxMUvdSqFXLaqCP2o89I/M76879BIHJoOzDZ1dkkxIo66o/IeYNgJvpZkVZefBRaQi5dRkC3DG/AbOnW4Wztwhi/yWxWJuffyONdja1j/66CAH+kqyCPtwK1fUuQ3GcgpW6/ZL3u8KTPiXEiEOQBnoiTq7rmdkjrRa72wzhibluVoZv2IIZrUpZ2pTQZMaOP5xg1Yi6L3lJbtEPxrzh5rBqVPa9Ppbq+ek1cFfGltDpYROcYJCZ9NfMAl7FwZvqGR5L/czhCJh7tkh01dpvIwXs2aqrYILnawwJpxlJUbWOEN4OAqjbVHO8QMLAKtufGK9sc0hxgeh77634nYmy7VOtu1gsd1qN8KMpxXL8XB/8IPhTbb",n:600000};
+const u=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));const K="sitios_key_v1";
+async function open(k){const pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:u(D.i)},k,u(D.c));document.open();document.write(new TextDecoder().decode(pt));document.close();}
+async function derive(p){const b=await crypto.subtle.importKey("raw",new TextEncoder().encode(p),"PBKDF2",false,["deriveKey"]);return crypto.subtle.deriveKey({name:"PBKDF2",salt:u(D.s),iterations:D.n,hash:"SHA-256"},b,{name:"AES-GCM",length:256},true,["decrypt"]);}
+(async()=>{try{const r=JSON.parse(localStorage.getItem(K)||"null");if(r&&r.e>Date.now()&&r.s===D.s){const k=await crypto.subtle.importKey("raw",u(r.k),"AES-GCM",false,["decrypt"]);await open(k);}}catch(e){try{localStorage.removeItem(K)}catch(_){}}})();
+document.getElementById("f").addEventListener("submit",async e=>{e.preventDefault();const b=document.getElementById("b"),er=document.getElementById("err");b.disabled=true;b.textContent="Abriendo…";er.textContent="";
+try{const k=await derive(document.getElementById("pw").value);if(document.getElementById("rem").checked){const raw=new Uint8Array(await crypto.subtle.exportKey("raw",k));try{localStorage.setItem(K,JSON.stringify({s:D.s,k:btoa(String.fromCharCode(...raw)),e:Date.now()+30*864e5}))}catch(_){}}await open(k);}
+catch(x){er.textContent="Contraseña incorrecta.";b.disabled=false;b.textContent="Entrar";}});
+</script></body></html>
